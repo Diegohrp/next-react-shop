@@ -1,0 +1,73 @@
+.my-account {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+}
+
+.my-account__title {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	color: var(--dark-text-color);
+	font-size: var(--lg);
+	font-weight: bold;
+}
+
+.my-account__form {
+	width: 100%;
+	height: 76vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.my-account__items-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.my-account__label {
+	font-size: var(--sm);
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.my-account__info {
+	height: 40px;
+	background-color: var(--light-color);
+	border: none;
+	font-size: var(--md);
+	font-family: var(--primary-font);
+	margin-bottom: 20px;
+	color: var(--light-text-color);
+	font-weight: 500;
+}
+
+.my-account__button {
+	height: 50px;
+	background-color: var(--light-color);
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	font-size: 1.6rem;
+	font-weight: bold;
+	font-family: var(--primary-font);
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 14px;
+}
+
+@media (min-width: 600px) {
+	.my-account {
+		display: grid;
+		place-content: center;
+		padding: 0;
+	}
+	.my-account__form {
+		width: 300px;
+		height: 320px;
+	}
+	.my-account__title {
+		margin-top: 0;
+	}
+}

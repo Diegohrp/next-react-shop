@@ -1,0 +1,35 @@
+@use "vars.scss" as *;
+.shopping-cart {
+	display: grid;
+	width: 100%;
+	grid-template-columns: auto 1fr auto auto;
+	justify-items: flex-start;
+	align-items: center;
+}
+
+.shopping-cart__img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	object-position: left;
+	margin: 10px;
+	border-radius: 22px;
+}
+
+.shopping-cart__title {
+	font-size: $sm;
+	color: $dark-text-color;
+	font-weight: 300;
+	margin-left: 15px;
+}
+.shopping-cart__price {
+	font-size: $sm;
+	font-weight: bold;
+	color: $dark-text-color;
+	margin-right: 20px;
+}
+
+.shopping-cart div:last-child {
+	margin-right: 20px;
+	cursor: pointer;
+}

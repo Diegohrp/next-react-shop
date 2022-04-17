@@ -1,0 +1,17 @@
+.orders-container {
+	display: grid;
+	width: 100%;
+	place-content: center;
+}
+.orders-container__title {
+	font-size: var(--lg);
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+	.orders-container__title {
+		display: none;
+	}
+}
